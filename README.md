@@ -9,7 +9,7 @@
 - Include cargo tests (where possible)
 - Functions should return result (in real life everything will fail at some point)
 - Never remove (still-current) documentation
-- Always clear, meaningful, unique names (e.g. variables, functions): e.g. with very, very, rare exceptions do not give two things one name, do not give one thing two names.
+- Always clear, meaningful, globally unique names (e.g. variables, functions, etc.): Do not give two things one name, do not give one thing two names.
 - Always absolute file paths
 - Always error handling
 - '?' should be avoided where it would obscure an error
