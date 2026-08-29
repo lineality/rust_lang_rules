@@ -1,7 +1,7 @@
 #### rust_lang_rules
 (Production-Rust rules of thumb)
 
-#### Also see [Modes & Case-Handling](https://github.com/lineality/modes_and_case_handling)
+#### Also see [Modes & Case-Handling](https://github.com/lineality/modes_and_case_handling/blob/main/mode_case_handling_framework_summary.md)
 
 # 🦀 Rust Guidelines 🦀:
 - Always best practice
@@ -38,7 +38,7 @@
 5. Mode & Case Handling, & Defensive-Programming: 
 - Modes: test-mode, debug-mode, production-release-mode; 
 - continual state-recovery (without panic/halt) in production-release-mode
-- See example/default framework: [github.com/lineality/modes_and_case_handling](https://github.com/lineality/modes_and_case_handling)
+- See Example/Default Framework: [github.com/lineality/modes_and_case_handling](https://github.com/lineality/modes_and_case_handling)
 
 6. Manage ownership and borrowing
 
