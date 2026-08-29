@@ -52,11 +52,12 @@
 
 10. Use state-less operations when possible
 
-#### Links:
+#### References & Links:
 - https://en.wikipedia.org/wiki/The_Power_of_10:_Rules_for_Developing_Safety-Critical_Code
 - https://spinroot.com/gerard/pdf/P10.pdf 
 - https://spinroot.com/static/index.html 
 - https://web.eecs.umich.edu/~imarkov/10rules.pdf 
 - https://en.wikipedia.org/wiki/Static_program_analysis 
 - https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/
-- https://www.oreilly.com/library/view/rust-atomics-and/9781098119430/ 
+- https://www.oreilly.com/library/view/rust-atomics-and/9781098119430/
+- Books by https://en.wikipedia.org/wiki/P._J._Plauger
