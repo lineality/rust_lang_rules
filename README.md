@@ -1,7 +1,7 @@
 #### rust_lang_rules
 (Production-Rust rules of thumb)
 
-#### Also see [Modes & Case-Handling](https://github.com/lineality/modes_and_case_handling/blob/main/mode_case_handling_framework_summary.md)
+#### Also see [Mode & Case-Handling](https://github.com/lineality/modes_and_case_handling/blob/main/mode_case_handling_framework_summary.md)
 
 # 🦀 Rust Guidelines 🦀:
 - Always best practice
