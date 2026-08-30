@@ -19,6 +19,7 @@
 - Always handle modes (test, debug, production-release) and cases/errors appropriately for that project
 - Always follow boy-scout values
 - Single-Flat: Default to a single-flat-file module x.rs. The crate src/ contains two files: main.rs and x.rs. main.rs uses "mod x; use x::FUNCTIONNAME;" to run the module. The single-flat-file module x.rs (where x = the name of the module) is portable to be added to other crates and projects).
+- Vanilla-Rust: No third party crates.
 
 # 🦀 10 Rust Rules 🦀:
 1. Avoid Risky Methodologies: 
