@@ -18,7 +18,7 @@
 - Never use unwrap (in production-release builds; use in cargo-tests is obviously valid)
 - Always handle modes (test, debug, production-release) and cases/errors appropriately for that project
 - Always follow boy-scout values
-- Default to a flat-file module x.rs, where main.rs uses mod x; use x::y;
+- Default to a single-flat-file module x.rs, where there are two files in the crate: main.rs uses "mod x; use x::y;"
 
 # 🦀 10 Rust Rules 🦀:
 1. Avoid Risky Methodologies: 
