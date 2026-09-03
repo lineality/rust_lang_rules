@@ -15,7 +15,7 @@
 - Always absolute file paths
 - Always error handling
 - '?' should be avoided where it would obscure an error
-- Never use unwrap (in production-release builds; use in cargo-tests is obviously valid)
+- Never use unwrap (in Production-Release builds / mode; use in Test Mode, cargo-tests, is obviously valid).
 - Always handle modes (Test | Debug | Production-Release) and cases/errors appropriately for that project.
 - Always follow boy-scout values
 - Single-Flat: Default to a single-flat-file module x.rs. The crate src/ contains two files: main.rs and x.rs. main.rs uses "mod x; use x::FUNCTIONNAME;" to run the module. The single-flat-file module x.rs (where x = the name of the module) is portable to be added to other crates and projects).
