@@ -16,10 +16,11 @@
 - Always error handling
 - '?' should be avoided where it would obscure an error
 - Never use unwrap (in Production-Release builds / mode; use in Test Mode, cargo-tests, is obviously valid).
-- Always handle modes (Test | Debug | Production-Release) and cases/errors appropriately for that project.
+- Always [handle](https://github.com/lineality/modes_and_case_handling) modes (Test Mode | Debug Mode | Production-Release Mode) and cases/errors appropriately, case by case, for that project. (There is no one-size-fits-all lazy-ideology.)
 - Always follow boy-scout values
 - Single-Flat: Default to a single-flat-file module x.rs. The crate src/ contains two files: main.rs and x.rs. main.rs uses "mod x; use x::FUNCTIONNAME;" to run the module. The single-flat-file module x.rs (where x = the name of the module) is portable to be added to other crates and projects).
-- Vanilla-Rust: No third party crates.
+- Default to Vanilla-Rust: No third party crates.
+- Take performance and security into consideration when designing parts and architectures.
 
 # 🦀 10 Rust Rules 🦀:
 1. Avoid Risky Methodologies: 
