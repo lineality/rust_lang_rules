@@ -29,7 +29,7 @@
 - no goto 
 - no fancy pointer use 
 - no preprocessor branching
-('unsafe' code blocks in Rust may be unavoidable)
+('unsafe' code blocks in Rust may be unavoidable, but using '#![forbid(unsafe_code)]' is a good starting default)
 
 2. Loops: either firmly bounded or unbounded w/ recovery
 
