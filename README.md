@@ -20,7 +20,7 @@
 - Always follow boy-scout values
 - Single-Flat: Default to a single-flat-file module x.rs. The crate src/ contains two files: main.rs and x.rs. main.rs uses "mod x; use x::FUNCTIONNAME;" to run the module. The single-flat-file module x.rs (where x = the name of the module) is portable to be added to other crates and projects).
 - Default to Vanilla-Rust: No third party crates.
-- Take performance and security into consideration when designing parts and architectures: Do not follow an idiology such as D.R.Y., OOP, etc. without an extremely compelling reason (such as performance or a security need) to do so. 
+- Take performance and security into consideration when designing parts and architectures: Do not follow an ideology such as D.R.Y., OOP, etc. without an extremely compelling reason (such as performance or a security need) to do so. 
 - Specify development-phase and use-type context (and related design-priorities): POC, MVP-1, use-once, long term production, etc.
 
 # 🦀 10 Rust Rules 🦀:
