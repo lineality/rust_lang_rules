@@ -22,6 +22,7 @@
 - Default to Vanilla-Rust: No third party crates.
 - Take performance and security into consideration when designing parts and architectures: Do not follow an ideology such as D.R.Y., OOP, etc. without an extremely compelling reason (such as performance or a security need) to do so. 
 - Specify development-phase and use-type context (and related design-priorities): POC, MVP-1, use-once, long term production, etc.
+- Prefer this flag:```#![forbid(unsafe_code)]```
 
 # 🦀 10 Rust Rules 🦀:
 1. Avoid Risky Methodologies: 
