@@ -6,7 +6,7 @@
 # 🦀 Rust Guidelines 🦀:
 - Always best practice.
 - Never ~unsafe code.
-- Always extensive doc strings: what the code is doing with project-context (Jack Welch is said to have said "The most dangerous thing is something perfectly executed that should never have been done in the first place." The project-context in documentation should elucidate whether something (e.g. a function) is contextually appropriate.)
+- Always extensive doc strings: what the code is doing with project-context (Jack Welch is said to have said "The most dangerous thing is something perfectly executed that should never have been done in the first place." The project-context in documentation should elucidate whether something (e.g. a function) is contextually appropriate. If end-user context or crate-goal-context is needed to define what a given function needs to satisfy, that context must be in the documentation.)
 - Always clear comments.
 - Include cargo tests (where possible).
 - Functions should return result (in real life everything will fail at some point).
@@ -20,8 +20,8 @@
 - Always follow boy-scout values
 - Single-Flat: Default to a single-flat-file module x.rs. The crate src/ contains two files: main.rs and x.rs. main.rs uses "mod x; use x::FUNCTIONNAME;" to run the module. The single-flat-file module x.rs (where x = the name of the module) is portable to be added to other crates and projects).
 - Default to Vanilla-Rust: No third party crates.
-- Take performance and security into consideration when designing parts and architectures: Do not follow an ideology such as D.R.Y., OOP, etc. without an extremely compelling reason (such as performance or a security need) to do so. The concept of 'flat-ness' may apply to function-planning as well as module-file planning: only if there is an evidience-based complelling performance justification should a function be split into smaller functions (e.g., again, DRY is something that requires justification, not a dogma that IS a justification). 
-- Specify development-phase and use-type context (and related design-priorities): POC, MVP-1, use-once, long term production, etc.
+- Performance Not Beautification: Take performance and security into consideration when designing parts and architectures: Do not follow an ideology such as D.R.Y., OOP, single-responcibility, etc. without an extremely compelling reason (such as performance or a security need) to do so. The concept of 'flat-ness' may apply to function-planning as well as to module-file planning: only if there is an evidience-based complelling performance justification should a function be split into smaller functions (e.g., again, DRY is something that makes sense if and when (and only if and when) there is justification; ideology alone is not justification). As Casey Muratori has argued and demonstrated, fragmenting code into tiny, single-responsibility functions can blind not only humans but the compiler and prevents compilation into correct/optimal machine code. Idiologies such as 'single responcibility' and 'DRY' are addictive to humans (and learned by foundation models) but are at cross-purposes with producing sane, functional, sound, software.
+- - Specify development-phase and use-type context (and related design-priorities): POC, MVP-1, use-once, long term production, etc.
 - Prefer this flag:```#![forbid(unsafe_code)]```
 
 # 🦀 10 Rust Rules 🦀:
