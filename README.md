@@ -6,7 +6,7 @@
 # 🦀 Rust Guidelines 🦀:
 - Always best practice.
 - Never ~unsafe code.
-- Always extensive doc strings: what the code is doing with project-context.
+- Always extensive doc strings: what the code is doing with project-context (Jack Welch is said to have said "The most dangerous thing is something perfectly executed that should never have been done in the first place." The project-context in documentation should elucidate whether something (e.g. a function) is contextually appropriate.)
 - Always clear comments.
 - Include cargo tests (where possible).
 - Functions should return result (in real life everything will fail at some point).
