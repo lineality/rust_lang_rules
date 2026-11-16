@@ -4,25 +4,25 @@
 #### Also see [Mode & Case-Handling](https://github.com/lineality/modes_and_case_handling/blob/main/mode_case_handling_framework_summary.md)
 
 # 🦀 Rust Guidelines 🦀:
-- Always best practice.
-- Never ~unsafe code.
+- Always best practice
+- Always follow boy-scout values
+- Never ~unsafe code
+- Strategic & Justified Design: Take performance and security into consideration when designing parts and architectures: Do not follow an ideology such as D.R.Y., OOP, single-responcibility, etc. without an extremely compelling reason (such as performance or a security need) to do so. The concept of 'flat-ness' may apply to function-planning as well as to module-file planning: only if there is an evidience-based compelling performance justification should a function be split into smaller functions (e.g., again, DRY is something that makes sense if and when (and only if and when) there is justification; ideology alone is not justification). As Casey Muratori has argued and demonstrated, fragmenting code into tiny, single-responsibility functions can blind not only humans but the compiler, preventing compilation into correct/optimal machine code. Idiologies such as 'single responcibility' and 'DRY' are addictive to humans (and learned by foundation models) but are at cross-purposes with producing sane, functional, sound, software. Contrary to the junkfood fads and radicalization of 1990-2020, the direction of fixing and improving code is often de-fragmenting blocks of production-functionality. Tactics vs. Strategy: Where project-context is strategy and isolated actions and abstractions in the absence of context are tactics, it is fatally naive and nihilistic to have an ideology that sees the existence of strategy as a part of the world to be scapegoated and eliminated, driving a monist agenda of proliferating ever more, and ever more decontectualized, isolated islands of tactical action and abstraction.
+- Always clear comments
+- Always clear, meaningful, globally unique names (e.g. variables, functions, etc.): Do not give two things one name, do not give one thing two names. "name spaces" are not an exception; no colliding names
 - Always extensive doc strings: what the code is doing with project-context (Jack Welch is said to have said "The most dangerous thing is something perfectly executed that should never have been done in the first place." The project-context in documentation should elucidate whether something (e.g. a function) is contextually appropriate. If end-user context or crate-goal-context is needed to define what a given function needs to satisfy, that context must be in the documentation.)
-- Always clear comments.
-- Include cargo tests (where possible).
-- Functions should return result (in real life everything will fail at some point).
-- Never remove (current) documentation.
-- Always clear, meaningful, globally unique names (e.g. variables, functions, etc.): Do not give two things one name, do not give one thing two names. "name spaces" are not an exception; no colliding names.
+- Never remove (current) documentation
+- Include cargo tests (where possible)
+- Functions should return result (in real life everything will fail at some point)
 - Always absolute file paths
-- Always error handling
+- Always error/case handling
 - '?' should be avoided where it would obscure an error
 - Never use unwrap (in Production-Release builds / mode; use in Test Mode, cargo-tests, is obviously valid).
 - Always [handle](https://github.com/lineality/modes_and_case_handling) modes (Test Mode | Debug Mode | Production-Release Mode) and cases/errors appropriately, case by case, for that project. (There is no one-size-fits-all lazy-ideology.)
-- Always follow boy-scout values
-- Single-Flat: Default to a single-flat-file module x.rs. The crate src/ contains two files: main.rs and x.rs. main.rs uses "mod x; use x::FUNCTIONNAME;" to run the module. The single-flat-file module x.rs (where x = the name of the module) is portable to be added to other crates and projects).
-- Default to Vanilla-Rust: No third party crates.
-- Strategic & Justified Design: Take performance and security into consideration when designing parts and architectures: Do not follow an ideology such as D.R.Y., OOP, single-responcibility, etc. without an extremely compelling reason (such as performance or a security need) to do so. The concept of 'flat-ness' may apply to function-planning as well as to module-file planning: only if there is an evidience-based compelling performance justification should a function be split into smaller functions (e.g., again, DRY is something that makes sense if and when (and only if and when) there is justification; ideology alone is not justification). As Casey Muratori has argued and demonstrated, fragmenting code into tiny, single-responsibility functions can blind not only humans but the compiler, preventing compilation into correct/optimal machine code. Idiologies such as 'single responcibility' and 'DRY' are addictive to humans (and learned by foundation models) but are at cross-purposes with producing sane, functional, sound, software. Contrary to the junkfood fads and radicalization of 1990-2020, the direction of fixing and improving code is often de-fragmenting blocks of production-functionality. Tactics vs. Strategy: Where project-context is strategy and isolated actions and abstractions in the absence of context are tactics, it is fatally naive and nihilistic to have an ideology that sees the existence of strategy as a part of the world to be scapegoated and eliminated, driving a monist agenda of proliferating ever more, and ever more decontectualized, isolated islands of tactical action and abstraction.
+- Single-Flat: Default to a single-flat-file module x.rs. The crate src/ contains two files: main.rs and x.rs. main.rs uses "mod x; use x::FUNCTIONNAME;" to run the module. The single-flat-file module x.rs (where x = the name of the module) is portable to be added to other crates and projects)
 - Specify development-phase and use-type context (and related design-priorities): POC, MVP-1, use-once, long term production, etc.
 - Prefer this flag:```#![forbid(unsafe_code)]```
+- Default to Vanilla-Rust: No third party crates
 
 # 🦀 10 Rust Rules 🦀:
 1. Avoid Risky Methodologies: 
