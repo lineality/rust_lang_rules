@@ -1,5 +1,5 @@
 #### rust_lang_rules
-(Production-Rust rules of thumb)
+(Rules of Thumb for Production-Release-Rust)
 
 #### Also see [Mode & Case-Handling](https://github.com/lineality/modes_and_case_handling/blob/main/mode_case_handling_framework_summary.md)
 
