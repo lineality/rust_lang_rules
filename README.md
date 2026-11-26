@@ -20,7 +20,7 @@
 - '?' should be avoided where it would obscure an error
 - Never use unwrap (in Production-Release builds / mode; use in Test Mode, cargo-tests, is obviously valid).
 - Always [handle](https://github.com/lineality/modes_and_case_handling) modes (Test Mode | Debug Mode | Production-Release Mode) and cases/errors appropriately, case by case, for that project. (There is no one-size-fits-all lazy-ideology.)
-- Single-Flat: Default to a single-flat-file module x.rs. The crate src/ contains two files: main.rs and x.rs. main.rs uses "mod x; use x::FUNCTIONNAME;" to run the module. The single-flat-file module x.rs (where x = the name of the module) is portable to be added to other crates and projects)
+- Single-Flat is Default: Default to, e.g., a single-flat-file module x.rs. The crate src/ contains two files: main.rs and x.rs. main.rs uses "mod x; use x::FUNCTIONNAME;" to run the module. The single-flat-file module x.rs (where x = the name of the module) is portable to be added to other crates and projects). Also default to a single flat function (not arbitrarily fragmenting procedures into as many helper micro-functions as possible in the absence practical justification). 
 - Specify development-phase and use-type context (and related design-priorities): POC, MVP-1, use-once, long term production, etc.
 - Default to Vanilla-Rust: No third party crates
 
